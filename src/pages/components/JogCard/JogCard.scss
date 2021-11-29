@@ -1,0 +1,40 @@
+.RunningCardComponent {
+  padding: 30px 20px;
+  margin: 30px auto 50px;
+  max-width: max-content;
+  display: flex;
+  align-items: flex-start;
+  transition: .5s;
+  color: #000;
+
+  .icon {
+    height: 85px;
+    width: 85px;
+  }
+
+  .info {
+    margin-left: 15px;
+    p {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &:hover {
+    background-color: #7ed321;
+    color: #fff;
+    border-radius: 10px;
+    transition: .5s;
+  }
+
+}
+
+@media screen and (max-width: 375px){
+  .RunningCardComponent {
+    border-bottom: 1px solid #B0B0B0;
+    padding: 45px 65px;
+    margin: 0 auto;
+    &:hover {
+      border-radius: 0;
+    }
+  }
+}

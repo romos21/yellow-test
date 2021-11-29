@@ -1,0 +1,21 @@
+.RunningCardCreator {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+
+  .icon {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .RunningCardCreator {
+    bottom: 30px;
+    right: 30px;
+    .icon {
+      height: 45px;
+      width: 45px;
+    }
+  }
+}

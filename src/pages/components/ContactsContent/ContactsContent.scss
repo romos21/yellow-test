@@ -1,0 +1,35 @@
+.ContactsContent {
+  margin: auto;
+  ul {
+    margin: 80px 35px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    li {
+      background-color: #ffe603;
+      padding: 10px;
+      border-radius: 3px;
+      text-align: center;
+    }
+    .contact-el-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ContactsContent {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    li {
+      margin: 0;
+      justify-self: stretch;
+      align-self: stretch;
+    }
+  }
+}

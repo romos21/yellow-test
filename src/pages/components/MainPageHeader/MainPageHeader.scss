@@ -1,0 +1,21 @@
+.MainPageHeader {
+  background-color: #7ed321;
+  padding: 30px 35px;
+  position: relative;
+  margin-bottom: 60px;
+
+  .logo-icon {
+    height: 55px;
+    width: 145px;
+    fill: #fff;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .MainPageHeader {
+    .logo-icon {
+      height: 40px;
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.PureJogsList {
+  margin: 140px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    height: 150px;
+    width: 150px;
+  }
+
+  .label {
+    color: #B0B0B0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .btn {
+    width: 249px;
+    height: 60px;
+    margin-top: 140px;
+    border-radius: 36px;
+    border: solid 3px #e990f9;
+    background: none;
+    color: #e990f9;
+    font-weight: bold;
+    transition: .5s;
+
+    &:hover {
+      transition: .5s;
+      background-color: #000;
+      color: #fff;
+      border: none;
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .PureJogsList {
+    .icon {
+      height: 85px;
+      width: 85px;
+    }
+    .label{
+      margin-top: 45px;
+    }
+  }
+}

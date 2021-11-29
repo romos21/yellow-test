@@ -1,0 +1,24 @@
+.InfoContent {
+  max-width: 615px;
+  margin: 85px auto 0;
+
+  .info-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7ed321;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .InfoContent {
+    max-width: 325px;
+    margin: 25px auto 0;
+    .info-title {
+      font-size: 25px;
+    }
+
+    .info-paragraph {
+      font-size: 12px;
+    }
+  }
+}

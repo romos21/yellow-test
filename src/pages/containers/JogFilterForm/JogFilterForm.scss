@@ -1,0 +1,76 @@
+.form-wrapper {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  min-height: 60px;
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  @-webkit-keyframes slideUp {
+    0% {
+      -webkit-transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  .form-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 22px;
+
+    .react-datepicker-wrapper {
+      width: auto;
+    }
+
+    .react-datepicker-ignore-onclickoutside {
+      margin: 0;
+      display: inline-block;
+    }
+
+    input {
+      border-radius: 7px;
+      border: solid 1px #979797;
+      padding: 0 10px;
+      margin-left: 15px;
+      line-height: 30px;
+      max-width: 100px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form-wrapper {
+    .form-field {
+      font-size: 13px;
+      input {
+        max-width: 70px;
+        margin: 0 17px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.MainHeaderNavbar {
+  .filter-active-icon {
+    height: 40px;
+    width: 40px;
+    fill: #62aa14;
+  }
+
+  .filter-hidden-icon {
+    height: 25px;
+    width: 25px;
+    fill: #fff;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  @keyframes underline-navbar-animation{
+    0% {width: 0;}
+    100% {width: 100%;}
+  }
+}
+
+@media screen and (max-width: 375px){
+  .MainHeaderNavbar {
+    .menu-icon {
+      height: 28px;
+      width: 28px;
+      margin-left: 40px;
+      display: block;
+      fill: #fff;
+      z-index: 9999;
+    }
+    .desktop-header-links-wrapper {
+      display: none;
+    }
+  }
+}

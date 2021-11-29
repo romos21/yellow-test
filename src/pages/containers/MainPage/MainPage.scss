@@ -1,0 +1,42 @@
+* {
+  font-size: 14px;
+}
+
+input, button {
+  outline: none;
+}
+
+.MainPage {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.common-container {
+  max-width: 505px;
+  padding: 100px 90px 45px;
+  border-radius: 44px;
+  margin: 80px auto;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px){
+  .common-container {
+    max-width: 305px;
+    padding: 40px 35px;
+    margin: 0 25px;
+  }
+}
